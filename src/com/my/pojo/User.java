@@ -4,10 +4,19 @@ import java.util.Objects;
 
 public class User {
     private int uid;
+    private String uname;
     private String pwd;
     private String sex;
     private int age;
     private String birth;
+
+    public String getUname() {
+        return uname;
+    }
+
+    public void setUname(String uname) {
+        this.uname = uname;
+    }
 
     public int getUid() {
         return uid;
@@ -53,8 +62,9 @@ public class User {
         super();
     }
 
-    public User(int uid, String pwd, String sex, int age, String birth) {
+    public User(int uid, String uname, String pwd, String sex, int age, String birth) {
         this.uid = uid;
+        this.uname = uname;
         this.pwd = pwd;
         this.sex = sex;
         this.age = age;
